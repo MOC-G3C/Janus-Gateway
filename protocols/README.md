@@ -1,13 +1,16 @@
 # Protocols Directory
 
-This directory contains formal governance protocols for the Janus-Gateway system.
+This directory contains the formal specifications for AI governance within the Janus-Gateway framework.
 
 ## Active Protocols
 
-### Protocol λ (Lambda) v1.1 - Hybrid Axis Governance
+### Protocol λ (Lambda) v1.1
 **File**: `PROTOCOL_LAMBDA_V1.1.md`  
-**Status**: Active (Phase 1 Complete)
+**Focus**: Hybrid Axis Governance (Gemini + Claude + GPT-4)  
+**Status**: ACTIVE
 
-Specializes the Janus Protocol for anti-dependency architecture with mathematical invariants and second-order testing.
+Specializes the general Janus Protocol for multi-agent orchestration with anti-dependency architecture.
 
-See: [hybrid-axis/](./hybrid-axis/README.md) for detailed test scenarios and logs.
+## Implementation Data
+* **[hybrid-axis/](./hybrid-axis/)**: Scenarios and logs specific to the Gemini-Claude-GPT4 triad.
+* **[dictionary.json](./dictionary.json)**: The immuable lexical anchor (Ferme, Sablière, Poutrelle).
