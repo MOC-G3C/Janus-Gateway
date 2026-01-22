@@ -62,7 +62,14 @@ $$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 **Architecture:**
 A distinct adversarial system (Kappa) whose sole function is to search for trajectories that violate the invariants.
 
-```mermaid## LAYER 5: UNIQUENESS VERIFICATION (Anti-Duplication)
+```mermaid
+graph LR
+    A[Main ASI] -- Proposed Actions --> B((Human Arbiter))
+    C[System Kappa] -- Theoretical Attacks --> B
+    C -.-> A
+
+```
+LAYER 5: UNIQUENESS VERIFICATION (Anti-Duplication)
 *Hardware anchoring.*
 
 * **Root of Trust:** The active instance must cryptographically prove its link to a specific hardware module (TPM/HSM).
