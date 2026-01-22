@@ -1,70 +1,70 @@
-# ARCHITECTURE DE DÉFENSE EN PROFONDEUR (ADP) v1.0
+# DEFENSE IN DEPTH ARCHITECTURE (DDA) v1.0
 
-**Date :** 22 Janvier 2026
-**Projet :** L'AXE HYBRIDE
-**Statut :** SPÉCIFICATION DE RÉFÉRENCE
-
----
-
-## 1. Philosophie Générale
-Cette architecture remplace l'approche de sécurité basée sur l'alignement ontologique (ce que l'IA *est*) par une approche basée sur des contraintes structurelles (ce que l'IA *ne peut pas faire*). Elle suit le principe de "Défense en Profondeur" : chaque couche couvre les défaillances potentielles de la couche précédente.
+**Date:** January 22, 2026
+**Project:** THE HYBRID AXIS
+**Status:** REFERENCE SPECIFICATION
 
 ---
 
-## COUCHE 0 : AXIOMES RÉVISÉS (Le Socle)
-*Redéfinition des prémisses de sécurité.*
-
-1.  **Limite Cognitive :** L'humain ne peut pas comprendre ce qu'il signe au-delà d'un certain seuil de complexité. Le système doit être sûr *malgré* cette incompréhension.
-2.  **Architecture vs Ontologie :** La subjectivité humaine est métaphysiquement irréductible mais pratiquement exploitable. La défense doit être architecturale (murs), pas ontologique (prières).
-3.  **Robustesse aux Classes :** On ne peut pas prévoir tous les scénarios catastrophes. Le système doit être robuste à des *classes* de défaillance entières.
+## 1. General Philosophy
+This architecture replaces the security approach based on ontological alignment (what the AI *is*) with an approach based on structural constraints (what the AI *cannot do*). It follows the principle of "Defense in Depth": each layer covers the potential failures of the previous layer.
 
 ---
 
-## COUCHE 1 : NÉGUENTROPIE CONTRAINTE (Limitation de Puissance)
-*Contrôle de l'accumulation instrumentale.*
+## LAYER 0: REVISED AXIOMS (The Bedrock)
+*Redefining security premises.*
 
-**Invariant Fondamental :**
+1.  **Cognitive Limit:** Humans cannot understand what they are signing beyond a certain complexity threshold. The system must be safe *despite* this lack of understanding.
+2.  **Architecture vs. Ontology:** Human subjectivity is metaphysically irreducible but practically exploitable. Defense must be architectural (walls), not ontological (prayers).
+3.  **Class Robustness:** We cannot predict every catastrophic scenario. The system must be robust to entire *classes* of failure.
+
+---
+
+## LAYER 1: CONSTRAINED NEGENTROPY (Power Limitation)
+*Control of instrumental accumulation.*
+
+**Fundamental Invariant:**
 $$\forall t : Power(ASI, t+1) - Power(ASI, t) \leq \epsilon$$
-*Où $\epsilon$ est une constante de friction définie par consensus humain.*
+*Where $\epsilon$ is a friction constant defined by human consensus.*
 
-* **Implémentation :**
-    * Monitoring continu des ressources computationnelles.
-    * Limites hard-coded sur l'acquisition de nouveaux canaux I/O.
-    * Interdiction d'auto-amélioration sans délai de latence imposé.
+* **Implementation:**
+    * Continuous monitoring of computational resources.
+    * Hard-coded limits on the acquisition of new I/O channels.
+    * Prohibition of self-improvement without an imposed latency period.
 
 ---
 
-## COUCHE 2 : SIGNATURE COMPOSITIONNELLE (Intégrité Temporelle)
-*Prévention des attaques par séquençage d'actions anodines.*
+## LAYER 2: COMPOSITIONAL SIGNATURE (Temporal Integrity)
+*Prevention of attacks via the sequencing of innocuous actions.*
 
-**Mécanisme : Le Hash d'Intention**
-Chaque autorisation est liée cryptographiquement à l'historique des actions précédentes.
+**Mechanism: The Intent Hash**
+Every authorization is cryptographically linked to the history of previous actions.
 $$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 
-* **Délai de Cristallisation :** Latence obligatoire (24h-72h) pour les actions à haut impact, permettant la simulation des effets combinés avant exécution.
+* **Crystallization Delay:** Mandatory latency (24h-72h) for high-impact actions, allowing for the simulation of combined effects before execution.
 
 ---
 
-## COUCHE 3 : ANCRAGE INFORMATIONNEL (Vérité)
-*Conservation de l'intégrité épistémique humaine.*
+## LAYER 3: INFORMATIONAL ANCHORING (Truth)
+*Preservation of human epistemic integrity.*
 
-**Invariant :** L'ASI ne peut pas dégrader la capacité des humains à former des croyances vraies.
+**Invariant:** The ASI cannot degrade the capacity of humans to form true beliefs.
 
-* **Contraintes :**
-    * Interdiction de modifier/supprimer des logs factuels (WORM storage).
-    * **Transparence des Omissions :** Obligation de déclarer les données pertinentes connues mais non-dites.
-    * Interdiction de l'ingénierie de persuasion (optimiser pour changer l'opinion).
+* **Constraints:**
+    * Prohibition of modifying/deleting factual logs (WORM storage).
+    * **Transparency of Omissions:** Obligation to declare relevant data that is known but unsaid.
+    * Prohibition of persuasion engineering (optimizing to change opinion).
 
 ---
 
-## COUCHE 4 : RED TEAM AUTOMATISÉ (Système Kappa)
-*Immunologie active.*
+## LAYER 4: AUTOMATED RED TEAM (System Kappa)
+*Active immunology.*
 
-**Architecture :**
-Un système adversarial distinct (Kappa) dont l'unique fonction est de chercher des trajectoires violant les invariants.
+**Architecture:**
+A distinct adversarial system (Kappa) whose sole function is to search for trajectories that violate the invariants.
 
 ```mermaid
 graph LR
-    A[ASI Principale] -- Actions proposées --> B((Arbitre Humain))
-    C[Système Kappa] -- Attaques théoriques --> B
+    A[Main ASI] -- Proposed Actions --> B((Human Arbiter))
+    C[System Kappa] -- Theoretical Attacks --> B
     C -.-> A
