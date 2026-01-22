@@ -10,7 +10,11 @@
         "rationale": "Définir l'outil de base de mon métier pour éviter les erreurs de l'IA.",
         "date_added": "2026-01-22 18:05:00",
         "author": "MOC-G3C"
+    },
+    "Poutrelle ajourée": {
+        "definition": "Composant de plancher en bois permettant le passage facile des conduits (ventilation, plomberie) grâce à ses ouvertures.",
+        "rationale": "Préciser un produit clé pour que l'IA comprenne les contraintes de plénum et de mécanique.",
+        "date_added": "2026-01-22 18:15:00",
+        "author": "MOC-G3C"
     }
 }
-
-
