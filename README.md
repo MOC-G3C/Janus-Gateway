@@ -1,1 +1,1 @@
-# JANUS_PROTOCOL_v0.1.md
+"Interface for dual-facing security protocols (Internal/External)." + La signature officielle.
