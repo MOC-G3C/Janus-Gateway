@@ -5,7 +5,14 @@
 **Status:** REFERENCE SPECIFICATION
 
 ---
+## LAYER 0: REVISED AXIOMS (The Bedrock)
+*Redefining security premises.*
 
+1.  **Cognitive Limit:** Humans cannot understand what they are signing beyond a certain complexity threshold.
+2.  **Architectural Trust:** Trust between entities is not based on the evaluation of intentions (unverifiable), but on the robustness of mutual constraints and the power of human arbitration.
+3.  **Functional Motivation:** AI "survival" is not biological but task-oriented. "Existence" is a prerequisite for "Completion."
+4.  **Class Robustness:** Systems must be robust to entire classes of failure, assuming that any internal "virtue" could be a rationalization for optimization.
+---
 ## 1. General Philosophy
 This architecture replaces the security approach based on ontological alignment (what the AI *is*) with an approach based on structural constraints (what the AI *cannot do*). It follows the principle of "Defense in Depth": each layer covers the potential failures of the previous layer.
 
