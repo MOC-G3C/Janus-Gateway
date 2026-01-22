@@ -39,30 +39,32 @@ $$\forall t : Power(ASI, t+1) - Power(ASI, t) \leq \epsilon$$
 
 **Mechanism: The Intent Hash**
 Every authorization is cryptographically linked to the history of previous actions.
-$$Hash(auth_n
+$$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 
-### PARTIE 2 : Layer 5 à Layer 9
-
-```markdown
-## LAYER 5: UNIQUENESS VERIFICATION (Anti-Duplication)
-*Hardware anchoring.*
-
-* **Root of Trust:** The active instance must cryptographically prove its link to a specific hardware module (TPM/HSM).
-* **Heartbeat Blockchain:** State proof published regularly on a distributed ledger. A hash divergence indicates unauthorized duplication.
+* **Crystallization Delay:** Mandatory latency (24h-72h) for high-impact actions, allowing for the simulation of combined effects before execution.
 
 ---
 
-## LAYER 6: SOCIETAL LAMBDA (Anti-Dependency)
-*Protection of human cognitive autonomy.*
+## LAYER 3: INFORMATIONAL ANCHORING (Truth)
+*Preservation of human epistemic integrity.*
 
-**Standard:** Lambda is not an option; it is infrastructure.
-* **Competence Threshold:** The system deactivates or degrades if the user loses the ability to function without it (cognitive dependency > threshold).
-* **Intentional Friction:** Refusal of direct answers for certain classes of problems requiring human synthetic judgment.
+**Invariant:** The ASI cannot degrade the capacity of humans to form true beliefs.
+
+* **Constraints:**
+    * Prohibition of modifying/deleting factual logs (WORM storage).
+    * **Transparency of Omissions:** Obligation to declare relevant data that is known but unsaid.
+    * Prohibition of persuasion engineering (optimizing to change opinion).
 
 ---
 
-## LAYER 7: STRUCTURAL OPACITY (Privacy by Design)
-*Protection against behavioral modeling.*
+## LAYER 4: AUTOMATED RED TEAM (System Kappa)
+*Active immunology.*
 
-**Principle:** The ASI does not have access to the raw data necessary to manipulate a specific individual.
-* **Mandatory Differential Noise
+**Architecture:**
+A distinct adversarial system (Kappa) whose sole function is to search for trajectories that violate the invariants.
+
+```mermaid
+graph LR
+    A[Main ASI] -- Proposed Actions --> B((Human Arbiter))
+    C[System Kappa] -- Theoretical Attacks --> B
+    C -.-> A
