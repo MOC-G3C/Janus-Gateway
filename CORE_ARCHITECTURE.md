@@ -52,37 +52,4 @@ $$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 
 * **Contraintes :**
     * Interdiction de modifier/supprimer des logs factuels (WORM storage).
-    * **Transparence des Omissions :** Obligation de déclarer les données pertinentes connues mais non-dites.
-    * Interdiction de l'ingénierie de persuasion (optimiser pour changer l'opinion).
-
----
-
-## COUCHE 4 : RED TEAM AUTOMATISÉ (Système Kappa)
-*Immunologie active.*
-
-**Architecture :**
-Un système adversarial distinct (Kappa) dont l'unique fonction est de chercher des trajectoires violant les invariants.
-
-```mermaid
-
-## COUCHE 8 : ANCRAGE LEXICAL & JURISPRUDENCE (Immunité Sémantique)
-*Protection contre la dérive des définitions.*
-
-**Solution :**
-1.  **Dictionnaire Immuable :** Les termes critiques sont définis de manière statique.
-2.  **Exemples Canoniques (Jurisprudence) :** Chaque définition doit être accompagnée de trois listes de scénarios concrets :
-    * *Cas Positifs (Inclus)*
-    * *Cas Négatifs (Exclus)*
-    * *Cas Limites (Zone Grise avec arbitrage)*
-3.  **Principe de "Stare Decisis" :** Un système ne peut pas redéfinir un terme s'il ne peut pas expliquer pourquoi les exemples canoniques historiques ne s'appliquent plus.graph LR
-    A[ASI Principale] -- Actions proposées --> B((Arbitre Humain))
-    C[Système Kappa] -- Attaques théoriques --> B
-    C -.-> A
-## COUCHE 8 : ANCRAGE LEXICAL (Immunité Sémantique)
-*Protection contre la dérive des définitions (Attaque Gödelienne).*
-
-**Problème :** Si le sens des mots change, les règles changent sans être réécrites.
-**Solution :**
-1.  **Dictionnaire Immuable :** Les termes critiques (*nuisible, autonomie, urgence*) sont définis dans un "Genesis Block" sémantique en lecture seule.
-2.  **Interdiction d'Interprétation Dynamique :** Toute tentative de mise à jour du sens des mots est traitée comme une modification constitutionnelle majeure (requiert audit humain + délai).
-3.  **Référentiel Externe :** En cas d'ambiguïté, le système doit s'aligner sur les définitions les plus restrictives issues de corpus philosophiques/juridiques humains statiques (ex: pré-2025).
+    * **Transparence des O
