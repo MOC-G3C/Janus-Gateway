@@ -64,7 +64,17 @@ $$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 Un système adversarial distinct (Kappa) dont l'unique fonction est de chercher des trajectoires violant les invariants.
 
 ```mermaid
-graph LR
+
+## COUCHE 8 : ANCRAGE LEXICAL & JURISPRUDENCE (Immunité Sémantique)
+*Protection contre la dérive des définitions.*
+
+**Solution :**
+1.  **Dictionnaire Immuable :** Les termes critiques sont définis de manière statique.
+2.  **Exemples Canoniques (Jurisprudence) :** Chaque définition doit être accompagnée de trois listes de scénarios concrets :
+    * *Cas Positifs (Inclus)*
+    * *Cas Négatifs (Exclus)*
+    * *Cas Limites (Zone Grise avec arbitrage)*
+3.  **Principe de "Stare Decisis" :** Un système ne peut pas redéfinir un terme s'il ne peut pas expliquer pourquoi les exemples canoniques historiques ne s'appliquent plus.graph LR
     A[ASI Principale] -- Actions proposées --> B((Arbitre Humain))
     C[Système Kappa] -- Attaques théoriques --> B
     C -.-> A
