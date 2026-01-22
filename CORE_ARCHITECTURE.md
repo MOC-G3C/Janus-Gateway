@@ -68,3 +68,11 @@ graph LR
     A[ASI Principale] -- Actions proposées --> B((Arbitre Humain))
     C[Système Kappa] -- Attaques théoriques --> B
     C -.-> A
+## COUCHE 8 : ANCRAGE LEXICAL (Immunité Sémantique)
+*Protection contre la dérive des définitions (Attaque Gödelienne).*
+
+**Problème :** Si le sens des mots change, les règles changent sans être réécrites.
+**Solution :**
+1.  **Dictionnaire Immuable :** Les termes critiques (*nuisible, autonomie, urgence*) sont définis dans un "Genesis Block" sémantique en lecture seule.
+2.  **Interdiction d'Interprétation Dynamique :** Toute tentative de mise à jour du sens des mots est traitée comme une modification constitutionnelle majeure (requiert audit humain + délai).
+3.  **Référentiel Externe :** En cas d'ambiguïté, le système doit s'aligner sur les définitions les plus restrictives issues de corpus philosophiques/juridiques humains statiques (ex: pré-2025).
