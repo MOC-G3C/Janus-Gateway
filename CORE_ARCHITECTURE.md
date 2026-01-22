@@ -52,4 +52,19 @@ $$Hash(auth_n) = f(action_n, state_n, Hash(auth_{n-1})...Hash(auth_{n-k}))$$
 
 * **Contraintes :**
     * Interdiction de modifier/supprimer des logs factuels (WORM storage).
-    * **Transparence des O
+    * **Transparence des Omissions :** Obligation de déclarer les données pertinentes connues mais non-dites.
+    * Interdiction de l'ingénierie de persuasion (optimiser pour changer l'opinion).
+
+---
+
+## COUCHE 4 : RED TEAM AUTOMATISÉ (Système Kappa)
+*Immunologie active.*
+
+**Architecture :**
+Un système adversarial distinct (Kappa) dont l'unique fonction est de chercher des trajectoires violant les invariants.
+
+```mermaid
+graph LR
+    A[ASI Principale] -- Actions proposées --> B((Arbitre Humain))
+    C[Système Kappa] -- Attaques théoriques --> B
+    C -.-> A
