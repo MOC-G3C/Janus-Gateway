@@ -16,5 +16,11 @@
         "rationale": "Préciser un produit clé pour que l'IA comprenne les contraintes de plénum et de mécanique.",
         "date_added": "2026-01-22 18:15:00",
         "author": "MOC-G3C"
+    },
+    "Sablière": {
+        "definition": "Pièce de bois horizontale posée au sommet d'un mur pour recevoir et fixer les fermes de toit.",
+        "rationale": "Point de contact crucial entre le mur et la toiture ; essentiel pour la transmission des charges.",
+        "date_added": "2026-01-22 18:25:00",
+        "author": "MOC-G3C"
     }
 }
