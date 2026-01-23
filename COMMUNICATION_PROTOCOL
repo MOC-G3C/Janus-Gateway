@@ -1,0 +1,41 @@
+# Communication Protocol: Client Outreach (MOC-G3C)
+
+**Scope**: Automated communication for project updates, quotes, and delivery checklists.
+**Standard**: Protocol λ v1.1 - Semantic Integrity.
+**Language**: English / French (based on client preference).
+
+---
+
+## 1. Core Communication Standards
+* **No Jargon**: All technical terms must match the `dictionary.json` (e.g., Ferme, Sablière) to avoid confusion.
+* **Transparency**: Clients must receive a clear audit trail of all structural validations.
+* **Simplicity**: Messages should be direct and actionable.
+
+## 2. Automated Trigger: Site Checklist Delivery
+Once a `CHECKLIST_LIVRAISON.md` is signed by the Arbiter (MOC-G3C):
+
+1. **Conversion**: The Markdown file is converted to a PDF.
+2. **Distribution**: The PDF is automatically emailed to the site supervisor and client.
+3. **Notification**: A confirmation SMS is sent to the site lead with the download link.
+
+## 3. Email Template: Project Milestone
+**Subject**: [Project Name] - Structural Integrity Report - MOC-G3C
+
+> "Dear Client, 
+> 
+> Please find attached the **Safety Lifting Checklist** for your current project. This document confirms that all structural components (Trusses, Top Plates, Floor Joists) have been inspected according to our Hybrid Axis safety protocols.
+> 
+> **Status**: APPROVED FOR INSTALLATION.
+> 
+> Regards,
+> Marc-Olivier Chiasson (MOC-G3C)"
+
+---
+
+## 4. Audit & Compliance
+All outgoing communications are logged in the `logs/` directory to ensure no "clandestine" changes were made to the original specs.
+
+$$\text{Valid Communication} \iff (\text{Content} \in \text{Dictionary}) \land (\text{Audit} = \text{PASS})$$
+
+---
+*Maintained by MOC-G3C - Sainte-Julie, Quebec*
