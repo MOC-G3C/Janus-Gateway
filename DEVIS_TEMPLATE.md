@@ -32,4 +32,10 @@ Avoid the terminal and manage everything through the GitHub interface on your Ma
 3. **Audit**: Review the `logs/` folder to ensure all Hybrid Axis activity is recorded.
 
 ---
+
+# QUOTATION: RESIDENTIAL ROOF STRUCTURE
+**Project Reference**: DT-2026-036-SJ
+**Location**: Sainte-Julie, Quebec
+**Arbiter**: Marc-Olivier Corbin (MOC-G3C)
+**Date**: January 22, 2026
 *Maintained by MOC-G3C - Beloeil, Quebec*
