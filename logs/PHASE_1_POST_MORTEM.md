@@ -1,6 +1,6 @@
 # RAPPORT POST-MORTEM : PHASE 1 (INITIALISATION)
 **Projet** : Janus-Gateway / Axe Hybride
-**Arbitre** : Marc-Olivier Chiasson (MOC-G3C)
+**Arbitre** : Marc-Olivier Corbin (MOC-G3C)
 **Date** : 22 Janvier 2026
 
 ## 1. Synthèse de l'Audit Immunologique
